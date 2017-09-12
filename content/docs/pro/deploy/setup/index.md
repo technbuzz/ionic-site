@@ -48,7 +48,7 @@ Where `YOUR_APP_ID` is the ID of the app in Ionic Pro, and `YOUR_CHANNEL_NAME` i
 
 ## Usage
 
-To push new updates to your app, first push a new build using the [Git Workflow](/docs/pro/git.html). This will create a new build viewable in the Ionic Pro dashboard.
+To push new updates to your app, first push a new build using the [Git Workflow](/docs/pro/basics/git/). This will create a new build viewable in the Ionic Pro dashboard.
 
 To get that new build live in your app using Deploy, there are two options. Either [manually deploy the build to the channel](/docs/pro/channels.html#deploying-to-a-channel) defined in the plugin above (the "Production" channel, by default), or, if you have specified a [specific git branch channel to auto-deploy](/docs/pro/channels.html#automating-deployment-from-a-git-branch), the Deploy plugin will auto update once the build has completed.
 
