@@ -2,13 +2,13 @@
   <li class="active">
     <ul>
       <li class="{% if page.category == 'pro-basics' %}active{% endif %}" >
-        <a ng-click="showIntro = !showIntro">Introduction</a>
+        <a ng-click="showIntro = !showIntro" class="pro-intro-link">Introduction</a>
         <ul ng-show="showIntro" ng-cloak {% if page.category == 'pro-basics' %}ng-init="showIntro = true"{% endif %}>
           <li>
             <a href="/docs/pro/basics/getting-started/">Quickstart</a>
           </li>
           <li>
-            <a href="/docs/pro/basics/git/">Using Git</a>
+            <a href="/docs/pro/basics/git/">Git Workflow</a>
             <ul>
               <li>
                 <a href="/docs/pro/basics/git/#installing-git">Installing Git</a>
@@ -33,7 +33,7 @@
         </ul>
       </li>
       <li class="{% if page.category == 'pro-view' %}active{% endif %}" >
-        <a ng-click="showView = !showView">View</a>
+        <a ng-click="showView = !showView" class="pro-view-link">View</a>
         <ul ng-show="showView" ng-cloak {% if page.category == 'view' %}ng-init="showView = true"{% endif %}>
           <li>
             <a href="/docs/pro/view/#install">Install Ionic View</a>
@@ -50,7 +50,7 @@
         </ul>
       </li>
       <li class="{% if page.category == 'pro-deploy' %}active{% endif %}">
-        <a ng-click="showDeploy = !showDeploy">Deploy</a>
+        <a ng-click="showDeploy = !showDeploy" class="pro-deploy-link">Deploy</a>
         <ul ng-show="showDeploy" ng-cloak {% if page.category == 'pro-live-deploy' %}ng-init="showDeploy = true"{% endif %}>
           <li>
             <a href="/docs/pro/deploy/setup.html#installation">Installation</a>
@@ -64,7 +64,7 @@
         </ul>
       </li>
       <li class="{% if page.category == 'pro-package' %}active{% endif %}" >
-        <a ng-click="showPackage = !showPackage">Package</a>
+        <a ng-click="showPackage = !showPackage" class="pro-package-link">Package</a>
         <ul ng-show="showPackage" ng-cloak {% if page.id == 'pro-native-builds' %}ng-init="showPackage = true"{% endif %}>
           <li>
             <a href="/docs/pro/package/profiles.html">Generating Credentials</a>
@@ -78,7 +78,7 @@
         </ul>
       </li>
       <li class="{% if page.category == 'pro-monitoring' %}active{% endif %}" >
-        <a ng-click="showMonitoring = !showMonitoring">Monitoring</a>
+        <a ng-click="showMonitoring = !showMonitoring" class="pro-monitoring-link">Monitoring</a>
         <ul ng-show="showMonitoring" ng-cloak {% if page.id == 'pro-error-monitoring' %}ng-init="showMonitoring = true"{% endif %}>
           <li>
             <a href="/docs/pro/monitoring/#install">Installation</a>
@@ -91,18 +91,22 @@
           </li>
         </ul>
       </li>
-      <li class="{% if page.category == 'pro-migration' %}active{% endif %}" >
-        <a ng-click="showMigration = !showMigration">Migration</a>
-        <ul ng-show="showMigration" ng-cloak {% if page.id == 'pro-migration' %}ng-init="showMigration = true"{% endif %}>
-        <ul>
+      <li class="{% if page.category == 'pro-advanced' %}active{% endif %}" >
+        <a ng-click="showAdvanced = !showAdvanced" class="pro-advanced-link">Advanced</a>
+        <ul ng-show="showAdvanced" ng-cloak {% if page.category == 'pro-advanced' %}ng-init="showAdvanced = true"{% endif %}>
           <li>
-            <a href="/docs/pro/migration/live-updates.html">Live updates</a>
-          </li>
-          <li>
-            <a href="/docs/pro/migration/package.html">Package</a>
-          </li>
-          <li>
-            <a href="/docs/pro/migration/view.html">Ionic View</a>
+            <a href="/docs/pro/migration/">Cloud Migration</a>
+            <ul>
+              <li>
+                <a href="/docs/pro/migration/#live-updates">Live updates</a>
+              </li>
+              <li>
+                <a href="/docs/pro/migration/#package">Package</a>
+              </li>
+              <li>
+                <a href="/docs/pro/migration/#view">Ionic View Legacy</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </li>

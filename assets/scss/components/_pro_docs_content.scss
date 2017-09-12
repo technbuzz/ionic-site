@@ -24,22 +24,25 @@
     margin: auto;
 
     > main {
-      margin-left: 300px;
+      margin-left: 275px;
     }
   }
 
   .side-nav {
     background: white;
 
-    top: 100px;
+    top: 150px;
 
-    width: 300px;
+    width: 275px;
 
     ul a::after {
       border: none !important;
     }
 
     & > ul.nested-menu > li > ul > li > ul {
+      // Margin in from the icon to the label start of the heading link
+      margin-left: 27px;
+
       & > li > a {
         font-size: 13px;
         color: #50565e;
@@ -52,14 +55,34 @@
     }
 
     & > ul.nested-menu > li > ul > li > a {
+      &::before {
+        background-image: url('/img/pro/sidebar-icon-sprite.png');
+        background-repeat: no-repeat;
+        background-color: transparent;
+        width: 16px;
+        height: 16px;
+        background-size: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        margin-top: -2px;
+        content: '';
+      }
+
       margin-top: 0;
       text-transform: none;
       font-size: 14px;
       font-weight: 600;
       color: #24282e;
       letter-spacing: 1px;
-
     }
   }
+
+  .pro-intro-link::before { background-position: 0px 0px }
+  .pro-deploy-link::before { background-position: 0px -64px }
+  .pro-package-link::before { background-position: 0px -80px }
+  .pro-monitoring-link::before { background-position: 0px -96px }
+  .pro-view-link::before { background-position: 0px -128px }
+  .pro-advanced-link::before { background-position: 0px -160px }
 
 }
