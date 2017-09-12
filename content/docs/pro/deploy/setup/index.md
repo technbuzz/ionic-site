@@ -1,6 +1,6 @@
 ---
 layout: fluid/pro_docs_base
-category: pro
+category: pro-deploy
 id: pro-live-deploy-setup
 title: Live Deploy Setup - Ionic Pro Documentation
 body_class: 'pro-docs'
@@ -8,7 +8,13 @@ hide_header_search: true
 dark_header: true
 ---
 
-# Live Deployments
+# Deploying
+
+Ionic Pro's Deploy feature makes it easy to deploy app updates in real time without going through a traditional app store submission process for the vast majority of business logic, UI, and style changes.
+
+The Deploy feature works with the Ionic Pro [Git Workflow](/docs/pro/basics/git/) to deploy new code updates in production (or testing) apps.
+
+*Note: The Deploy feature only works on binary compatible changes, meaning if you rely on native code updates you must resubmit to the app store first before using Deploy.*
 
 ## Installation
 

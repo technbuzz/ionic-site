@@ -34,7 +34,7 @@
       </li>
       <li class="{% if page.category == 'pro-view' %}active{% endif %}" >
         <a ng-click="showView = !showView" class="pro-view-link">View</a>
-        <ul ng-show="showView" ng-cloak {% if page.category == 'view' %}ng-init="showView = true"{% endif %}>
+        <ul ng-show="showView" ng-cloak {% if page.category == 'pro-view' %}ng-init="showView = true"{% endif %}>
           <li>
             <a href="/docs/pro/view/#install">Install Ionic View</a>
           </li>
@@ -51,21 +51,26 @@
       </li>
       <li class="{% if page.category == 'pro-deploy' %}active{% endif %}">
         <a ng-click="showDeploy = !showDeploy" class="pro-deploy-link">Deploy</a>
-        <ul ng-show="showDeploy" ng-cloak {% if page.category == 'pro-live-deploy' %}ng-init="showDeploy = true"{% endif %}>
+        <ul ng-show="showDeploy" ng-cloak {% if page.category == 'pro-deploy' %}ng-init="showDeploy = true"{% endif %}>
           <li>
-            <a href="/docs/pro/deploy/setup.html#installation">Installation</a>
+            <a href="/docs/pro/deploy/">Introduction</a>
           </li>
           <li>
-            <a href="/docs/pro/deploy/setup.html#usage">Pushing Deploys</a>
+            <a href="/docs/pro/deploy/setup/#installation">Installation</a>
           </li>
+          <li>
+            <a href="/docs/pro/deploy/setup/#usage">Deploying</a>
+          </li>
+          <!--
           <li>
             <a href="/docs/pro/deploy/plugin-api.html">Plugin API</a>
           </li>
+          -->
         </ul>
       </li>
       <li class="{% if page.category == 'pro-package' %}active{% endif %}" >
         <a ng-click="showPackage = !showPackage" class="pro-package-link">Package</a>
-        <ul ng-show="showPackage" ng-cloak {% if page.id == 'pro-native-builds' %}ng-init="showPackage = true"{% endif %}>
+        <ul ng-show="showPackage" ng-cloak {% if page.category == 'pro-package' %}ng-init="showPackage = true"{% endif %}>
           <li>
             <a href="/docs/pro/package/profiles.html">Generating Credentials</a>
           </li>
@@ -79,7 +84,7 @@
       </li>
       <li class="{% if page.category == 'pro-monitoring' %}active{% endif %}" >
         <a ng-click="showMonitoring = !showMonitoring" class="pro-monitoring-link">Monitoring</a>
-        <ul ng-show="showMonitoring" ng-cloak {% if page.id == 'pro-error-monitoring' %}ng-init="showMonitoring = true"{% endif %}>
+        <ul ng-show="showMonitoring" ng-cloak {% if page.category == 'pro-monitoring' %}ng-init="showMonitoring = true"{% endif %}>
           <li>
             <a href="/docs/pro/monitoring/#install">Installation</a>
           </li>

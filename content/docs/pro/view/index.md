@@ -1,6 +1,6 @@
 ---
 layout: fluid/pro_docs_base
-category: pro
+category: pro-view
 id: pro-beta-testing
 title: Beta Testing with Ionic View - Ionic Pro Documentation
 body_class: 'pro-docs'

@@ -1,6 +1,6 @@
 ---
 layout: fluid/pro_docs_base
-category: pro
+category: pro-deploy
 id: pro-live-deploy
 title: Live Deploy - Ionic Pro Documentation
 body_class: 'pro-docs'

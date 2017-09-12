@@ -1,6 +1,6 @@
 ---
 layout: fluid/pro_docs_base
-category: pro
+category: pro-devapp
 id: pro-getting-started
 title: Ionic Developer App - Ionic Pro Documentation
 body_class: 'pro-docs'

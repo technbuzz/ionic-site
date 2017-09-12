@@ -1,6 +1,6 @@
 ---
 layout: fluid/pro_docs_base
-category: pro
+category: pro-package
 id: pro-native-builds
 title: Native Binary Builds - Ionic Pro Documentation
 body_class: 'pro-docs'
