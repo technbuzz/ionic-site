@@ -1,6 +1,6 @@
 ---
 layout: fluid/pro_docs_base
-category: pro
+category: pro-basics
 id: pro-git
 title: Working with Git - Ionic Pro Documentation
 body_class: 'pro-docs'

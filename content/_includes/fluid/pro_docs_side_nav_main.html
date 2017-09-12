@@ -1,118 +1,71 @@
 <ul class="nested-menu">
-  <li class="{% if page.id == 'home' %}active top-level{% endif %}">
-    <a href="/docs/pro/">Ionic Pro</a>
-  </li>
-
   <li class="active">
     <ul>
-      <li class="{% if page.id == 'pro-getting-started' %}active{% endif %}">
-        <a href="/docs/pro/getting-started.html">Getting Started</a>
-        <ul>
+      <li class="{% if page.category == 'pro-basics' %}active{% endif %}" >
+        <a ng-click="showIntro = !showIntro">Introduction</a>
+        <ul ng-show="showIntro" ng-cloak {% if page.category == 'pro-basics' %}ng-init="showIntro = true"{% endif %}>
           <li>
-            <a href="/docs/pro/getting-started.html#signing-up-for-pro">Signing up for Pro</a>
-            <a href="/docs/pro/getting-started.html#starting-a-new-app">Starting a New App</a>
-            <a href="/docs/pro/getting-started.html#linking-an-existing-app">Linking an Existing App</a>
+            <a href="/docs/pro/basics/getting-started/">Quickstart</a>
+          </li>
+          <li>
+            <a href="/docs/pro/basics/git/">Using Git</a>
+            <ul>
+              <li>
+                <a href="/docs/pro/basics/git/#installing-git">Installing Git</a>
+              </li>
+              <li>
+                <a href="/docs/pro/basics/git/#adding-your-existing-repository">Adding your Existing Repository</a>
+              </li>
+              <li>
+                <a href="/docs/pro/basics/git/#pushing-new-builds">Pushing New Builds</a>
+              </li>
+              <li>
+                <a href="/docs/pro/basics/git/#working-with-branches">Working with Branches</a>
+              </li>
+              <li>
+                <a href="/docs/pro/basics/git/#working-with-other-team-members">Working w/ other Team Members</a>
+              </li>
+              <li>
+                <a href="/docs/pro/basics/git/#ssh-keys">Adding SSH Keys</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </li>
-      <!--
-      <li class="{% if page.category == 'pro-concepts' %}active{% endif %}">
-        <a href="/docs/pro/concepts.html">Concepts</a>
-        <ul>
+      <li class="{% if page.category == 'pro-view' %}active{% endif %}" >
+        <a ng-click="showView = !showView">View</a>
+        <ul ng-show="showView" ng-cloak {% if page.category == 'view' %}ng-init="showView = true"{% endif %}>
           <li>
-            <a href="/docs/pro/concepts.html#builds">Builds</a>
+            <a href="/docs/pro/view/#install">Install Ionic View</a>
           </li>
           <li>
-            <a href="/docs/pro/concepts.html#channels">Channels</a>
-          </li>
-        </ul>
-      </li>
-    -->
-      <li class="{% if page.id == 'pro-git' %}active{% endif %}">
-        <a href="/docs/pro/git.html">Git Workflow</a>
-        <ul>
-          <li>
-            <a href="/docs/pro/git.html#installing-git">Installing Git</a>
+            <a href="/docs/pro/view/#using-channels-with-ionic-view">Using Channels with View</a>
           </li>
           <li>
-            <a href="/docs/pro/git.html#adding-your-existing-repository">Adding your Existing Repository</a>
+            <a href="/docs/pro/view/#sharing">Inviting Private Testers</a>
           </li>
           <li>
-            <a href="/docs/pro/git.html#pushing-new-builds">Pushing New Builds</a>
-          </li>
-          <li>
-            <a href="/docs/pro/git.html#working-with-branches">Working with Branches</a>
-          </li>
-          <li>
-            <a href="/docs/pro/git.html#working-with-other-team-members">Working w/ other Team Members</a>
-          </li>
-          <li>
-            <a href="/docs/pro/git.html#ssh-keys">Adding SSH Keys</a>
+            <a href="/docs/pro/view/#sharing">Sharing Publicly</a>
           </li>
         </ul>
       </li>
-      <!--<li class="{% if page.id == 'pro-device-testing' %}active{% endif %}">
-        <a href="/docs/pro/dev-app.html">Local Device Testing</a>
-        <ul>
+      <li class="{% if page.category == 'pro-deploy' %}active{% endif %}">
+        <a ng-click="showDeploy = !showDeploy">Deploy</a>
+        <ul ng-show="showDeploy" ng-cloak {% if page.category == 'pro-live-deploy' %}ng-init="showDeploy = true"{% endif %}>
           <li>
-            <a href="/docs/pro/dev-app.html#installation">Installing the DevApp</a>
+            <a href="/docs/pro/deploy/setup.html#installation">Installation</a>
           </li>
           <li>
-            <a href="/docs/pro/dev-app.html#connecting">Connecting to Ionic App</a>
-          </li>
-        </ul>
-      </li>-->
-      <li class="{% if page.id == 'pro-channels' %}active{% endif %}">
-        <a href="/docs/pro/channels.html">Channels</a>
-        <ul>
-          <li>
-            <a href="/docs/pro/channels.html#setting-up-a-channel">Setting Up a Channel</a>
+            <a href="/docs/pro/deploy/setup.html#usage">Pushing Deploys</a>
           </li>
           <li>
-            <a href="/docs/pro/channels.html#deploying-to-a-channel">Deploying to a Channel</a>
-          </li>
-          <li>
-            <a href="/docs/pro/channels.html#using-public-channels">Using Public Channels</a>
-          </li>
-          <li>
-            <a href="/docs/pro/channels.html#automating-deployment-from-a-git-branch">Automate Deployments from Git</a>
+            <a href="/docs/pro/deploy/plugin-api.html">Plugin API</a>
           </li>
         </ul>
       </li>
-      <li class="{% if page.id == 'pro-beta-testing' %}active{% endif %}">
-        <a href="/docs/pro/beta-testing.html">Ionic View Beta Testing</a>
-        <ul>
-          <li>
-            <a href="/docs/pro/beta-testing.html#install">Install Ionic View</a>
-          </li>
-          <li>
-            <a href="/docs/pro/beta-testing.html#using-channels-with-ionic-view">Using Channels with View</a>
-          </li>
-          <li>
-            <a href="/docs/pro/beta-testing.html#sharing">Inviting Private Testers</a>
-          </li>
-          <li>
-            <a href="/docs/pro/beta-testing.html#sharing">Sharing Publicly</a>
-          </li>
-        </ul>
-      </li>
-      <li class="{% if page.id == 'pro-live-deploy' %}active{% endif %}{% if page.id == 'pro-live-deploy-setup' %}active{% endif %}{% if page.id == 'pro-live-deploy-migrate' %}active{% endif %}{% if page.id == 'pro-live-deploy-api' %}active{% endif %}">
-        <a href="/docs/pro/live-deploy/index.html">Live Deployments</a>
-        <ul>
-          <li>
-            <a href="/docs/pro/live-deploy/setup.html#installation">Installation</a>
-          </li>
-          <li>
-            <a href="/docs/pro/live-deploy/setup.html#usage">Pushing Deploys</a>
-          </li>
-          <li>
-            <a href="/docs/pro/live-deploy/plugin-api.html">Plugin API</a>
-          </li>
-        </ul>
-      </li>
-      <li class="{% if page.id == 'pro-native-builds' %}active{% endif %}">
-        <a href="/docs/pro/package/index.html">Native Builds</a>
-        <ul>
+      <li class="{% if page.category == 'pro-package' %}active{% endif %}" >
+        <a ng-click="showPackage = !showPackage">Package</a>
+        <ul ng-show="showPackage" ng-cloak {% if page.id == 'pro-native-builds' %}ng-init="showPackage = true"{% endif %}>
           <li>
             <a href="/docs/pro/package/profiles.html">Generating Credentials</a>
           </li>
@@ -124,25 +77,23 @@
           </li>
         </ul>
       </li>
-      <li class="{% if page.id == 'pro-error-monitoring' %}active{% endif %}">
-        <a href="/docs/pro/error-monitoring.html">Error Monitoring</a>
-        <ul>
+      <li class="{% if page.category == 'pro-monitoring' %}active{% endif %}" >
+        <a ng-click="showMonitoring = !showMonitoring">Monitoring</a>
+        <ul ng-show="showMonitoring" ng-cloak {% if page.id == 'pro-error-monitoring' %}ng-init="showMonitoring = true"{% endif %}>
           <li>
-            <a href="/docs/pro/error-monitoring.html#install">Installation</a>
+            <a href="/docs/pro/monitoring/#install">Installation</a>
           </li>
           <li>
-            <a href="/docs/pro/error-monitoring.html#source-maps">Adding SourceMaps</a>
+            <a href="/docs/pro/monitoring/#source-maps">Adding SourceMaps</a>
           </li>
           <li>
-            <a href="/docs/pro/error-monitoring.html#releases">Releases</a>
+            <a href="/docs/pro/monitoring/#releases">Releases</a>
           </li>
         </ul>
       </li>
-      <li>
-        <a href="">Additional CLI Commands</a>
-      </li>
-      <li class="{% if page.id == 'pro-migration' %}active{% endif %}">
-        <a href="/docs/pro/migration/index.html">Migrate from Cloud</a>
+      <li class="{% if page.category == 'pro-migration' %}active{% endif %}" >
+        <a ng-click="showMigration = !showMigration">Migration</a>
+        <ul ng-show="showMigration" ng-cloak {% if page.id == 'pro-migration' %}ng-init="showMigration = true"{% endif %}>
         <ul>
           <li>
             <a href="/docs/pro/migration/live-updates.html">Live updates</a>

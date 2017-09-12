@@ -1,6 +1,6 @@
 ---
 layout: fluid/pro_docs_base
-category: pro
+category: pro-basics
 id: pro-getting-started
 title: Getting Started with Ionic Pro - Ionic Pro Documentation
 body_class: 'pro-docs'
