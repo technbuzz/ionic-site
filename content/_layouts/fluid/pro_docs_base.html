@@ -3,8 +3,22 @@ layout: fluid/default
 back_button_text_image: "/img/docs/docs-pro-text.png"
 hide_version_dropdown: true
 navbar_id: 'pro-header'
+plain_header: true
+is_responsive: true
 ---
 
+<div id="pro-sub-header" class="sub-header">
+  <div class="container">
+    <h2 class="sub-header-title">Pro docs</h2>
+    <div class="sub-header-widget">
+    </div>
+    <div class="sub-header-links">
+      <a href="/docs/pro/">Documentation</a>
+      <a href="http://support.ionicjs.com/">Support</a>
+      <a href="https://dashboard.ionicjs.com/">Dashboard</a>
+    </div>
+  </div>
+</div>
 
 <div id="pro-docs" class="docs-container"
      {% if page.angular_controller %}

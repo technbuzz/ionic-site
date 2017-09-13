@@ -1,0 +1,30 @@
+/**
+ * The Sub Header sits under the main navigation to display context-specific
+ * page information, widgets, and links.
+ * September 2017
+ */
+.sub-header {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sub-header-title {
+    margin: 0;
+    width: 275px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .sub-header-widget {
+    flex: 1;
+  }
+  .sub-header-links {
+    a {
+      color: #5E6779;
+      margin-left: 10px;
+      &:hover {
+        color: #B5BCC9;
+      }
+    }
+  }
+}

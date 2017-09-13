@@ -1,12 +1,12 @@
-#pro-header, #pro-docs {
-  width: 960px;
-  margin: auto;
+#pro-header, #pro-docs, #pro-sub-header {
+  //width: 960px;
+  //margin: auto;
 
   @media (max-width: $screen-md-max) {
-    width: 768px;
+    //width: 768px;
   }
   @media (max-width: $screen-xs-max) {
-    width: 100%;
+    //width: 100%;
   }
 }
 
@@ -20,8 +20,8 @@
 #pro-docs {
 
   &.docs-container {
-    max-width: 960px;
-    margin: auto;
+    //max-width: 960px;
+    //margin: auto;
 
     > main {
       margin-left: 275px;
