@@ -1,39 +1,23 @@
-#pro-header, #pro-docs, #pro-sub-header {
-  //width: 960px;
-  //margin: auto;
-
-  @media (max-width: $screen-md-max) {
-    //width: 768px;
-  }
-  @media (max-width: $screen-xs-max) {
-    //width: 100%;
-  }
+body.docs #snap-bar + #pro-header.navbar {
+  margin-top: 22px;
 }
 
 #pro-header {
   background: white;
 
+  .container {
+    border-bottom: 1px solid #EEF0F3;
+  }
+
   a {
     color: #737B88;
   }
 }
+
 #pro-docs {
 
-  &.docs-container {
-    //max-width: 960px;
-    //margin: auto;
-
-    > main {
-      margin-left: 275px;
-    }
-  }
-
-  .side-nav {
+  .responsive-side-nav {
     background: white;
-
-    top: 150px;
-
-    width: 275px;
 
     ul a::after {
       border: none !important;

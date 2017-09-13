@@ -4,6 +4,8 @@
  * September 2017
  */
 .sub-header {
+  padding: 20px 0;
+
   .container {
     display: flex;
     flex-direction: row;
@@ -22,6 +24,8 @@
     a {
       color: #5E6779;
       margin-left: 10px;
+      font-weight: 500;
+      font-size: 13px;
       &:hover {
         color: #B5BCC9;
       }

@@ -1,0 +1,18 @@
+.responsive-docs-container.docs-container {
+  padding-top: 25px;
+
+  .responsive-side-nav {
+    position: static;
+
+    width: 100%;
+
+    .nested-menu {
+      padding-top: 0;
+      padding-left: 0;
+    }
+  }
+
+  main {
+    padding-top: 0;
+  }
+}
