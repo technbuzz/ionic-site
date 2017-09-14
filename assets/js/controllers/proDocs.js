@@ -2,7 +2,7 @@ IonicSiteModule
 .controller('ProDocsCtrl', ['$scope', '$timeout', 'ionicMetrics',
   function($scope, $timeout, ionicMetrics) {
     $scope.sections = {
-      intro: true,
+      intro: false,
       view: false,
       deploy: false,
       package: false,
