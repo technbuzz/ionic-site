@@ -1,11 +1,13 @@
 ---
 layout: fluid/default
 back_button_text_image: "/img/docs/docs-pro-text.png"
+body_class: 'responsive-docs'
 hide_version_dropdown: true
 navbar_id: 'pro-header'
 plain_header: true
 is_responsive: true
 ---
+
 
 <div id="pro-sub-header" class="sub-header">
   <div class="container">
@@ -21,17 +23,10 @@ is_responsive: true
 </div>
 
 <div id="pro-docs" class="responsive-docs-container docs-container" ng-controller="ProDocsCtrl as vm">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <nav class="side-nav responsive-side-nav" data-spy="affix" data-offset-top="182">
-          
-          {% include fluid/pro_docs_side_nav_main.html %}
-        </nav>
-      </div>
-      <main class="col-md-9">
-        {{ content }}
-      </main>
-    </div>
-  </div>
+  <nav class="side-nav responsive-side-nav">
+    {% include fluid/pro_docs_side_nav_main.html %}
+  </nav>
+  <main>
+    {{ content }}
+  </main>
 </div>

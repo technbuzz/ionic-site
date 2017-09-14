@@ -1,17 +1,34 @@
+body.responsive-docs {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: static;
+  overflow: hidden;
+}
+
 .responsive-docs-container.docs-container {
+  min-height: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+
   padding-top: 25px;
 
   .responsive-side-nav {
+    width: 300px;
+    padding-left: 25px;
     position: static;
-
+    overflow-y: auto;
+    /*
     &.affix-top {
-      position: static;
+      top: 182px;
     }
 
     &.affix {
       position: fixed;
       top: 15px;
     }
+    */
 
     //width: 100%;
 
@@ -22,6 +39,8 @@
   }
 
   main {
+    flex: 1;
+    margin-left: 0;
     padding-top: 0;
     overflow: auto;
   }
