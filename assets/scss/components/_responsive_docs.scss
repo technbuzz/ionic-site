@@ -30,9 +30,37 @@
   }
 
   main {
-    flex: 1;
     margin-left: 0;
     padding-top: 0;
-    overflow: auto;
+
+    color: #353940;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+
+    p {
+      color: #353940;
+      margin: 1.2em 0 1.6em;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 26px;
+    }
+
+    h1 {
+      color: #24282e;
+      line-height: 1.4em;
+      margin: 2em 0 1em;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    h2 {
+      padding-top: 0em;
+    }
   }
 }
