@@ -1,26 +1,13 @@
-body.responsive-docs {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  position: static;
-  overflow: hidden;
-}
-
 .responsive-docs-container.docs-container {
-  min-height: auto;
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-
   padding-top: 25px;
 
   .responsive-side-nav {
     width: 300px;
-    padding-left: 25px;
     position: static;
     overflow-y: auto;
-    /*
+
     &.affix-top {
+      position: static;
       top: 182px;
     }
 
@@ -28,7 +15,11 @@ body.responsive-docs {
       position: fixed;
       top: 15px;
     }
-    */
+
+    &.affix-bottom {
+      position: fixed;
+      top: 15px !important;
+    }
 
     //width: 100%;
 

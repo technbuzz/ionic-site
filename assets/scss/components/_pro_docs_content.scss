@@ -16,8 +16,15 @@ body.docs #snap-bar + #pro-header.navbar {
 
 #pro-docs {
 
+  .responsive-side-nav.affix + main,
+  .responsive-side-nav.affix-bottom + main {
+    // The nav bar's width minus it's negative left margin
+    margin-left: 274px;
+  }
+
   .responsive-side-nav {
-    background: white;
+    background: transparent;
+    margin-left: -26px;
 
     ul a::after {
       border: none !important;
