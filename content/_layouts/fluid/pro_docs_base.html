@@ -11,7 +11,7 @@ is_responsive: true
 
 <div id="pro-sub-header" class="sub-header">
   <div class="container">
-    <h2 class="sub-header-title">Pro docs</h2>
+    <h2 class="sub-header-title"><a href="/docs/">Documentation</a> / Pro</h2>
     <div class="sub-header-widget">
     </div>
     <div class="sub-header-links">
@@ -23,10 +23,14 @@ is_responsive: true
 </div>
 
 <div id="pro-docs" class="responsive-docs-container docs-container" ng-controller="ProDocsCtrl as vm">
-  <nav class="side-nav responsive-side-nav">
-    {% include fluid/pro_docs_side_nav_main.html %}
-  </nav>
-  <main>
-    {{ content }}
-  </main>
+  <div class="container">
+    <div class="row">
+      <nav class="side-nav responsive-side-nav col-md-4" data-spy="affix" data-offset="128">
+        {% include fluid/pro_docs_side_nav_main.html %}
+      </nav>
+      <main class="col-md-8">
+        {{ content }}
+      </main>
+    </div>
+  </div>
 </div>

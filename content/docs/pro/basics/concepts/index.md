@@ -1,7 +1,7 @@
 ---
 layout: fluid/pro_docs_base
 category: pro-basics
-id: pro-channels
+id: pro-concepts
 title: Channels - Ionic Pro Documentation
 body_class: 'pro-docs'
 hide_header_search: true

@@ -1,7 +1,7 @@
 ---
 layout: fluid/pro_docs_base
 category: pro-basics
-id: pro-home
+id: pro-help
 title: Ionic Pro Documentation
 body_class: 'pro-docs'
 hide_header_search: true

@@ -5,10 +5,13 @@
         <a ng-click="toggle('intro')" class="pro-intro-link">Introduction</a>
         <ul ng-show="sections.intro" ng-cloak {% if page.category == 'pro-basics' %}ng-init="sections.intro = true"{% endif %}>
           <li>
-            <a href="/docs/pro/basics/getting-started/">Quickstart</a>
+            <a href="/docs/pro/basics/welcome/" class="{% if page.id == 'pro-welcome' %}active{% endif %}">Welcome</a>
           </li>
           <li>
-            <a href="/docs/pro/basics/git/">Git Workflow</a>
+            <a href="/docs/pro/basics/getting-started/" class="{% if page.id == 'pro-getting-started' %}active{% endif %}">Getting Started</a>
+          </li>
+          <li>
+            <a href="/docs/pro/basics/git/" class="{% if page.id == 'pro-git' %}active{% endif %}">Git Workflow</a>
             <ul>
               <li>
                 <a href="/docs/pro/basics/git/#installing-git">Installing Git</a>
@@ -31,11 +34,14 @@
             </ul>
           </li>
           <li>
-            <a href="/docs/pro/basics/concepts/">Concepts</a>
+            <a href="/docs/pro/basics/concepts/" class="{% if page.id == 'pro-concepts' %}active{% endif %}">Concepts</a>
             <ul>
               <li><a href="/docs/pro/basics/concepts/#channels">Channels</a></li>
               <li><a href="/docs/pro/basics/concepts/#builds">Builds</a></li>
             </ul>
+          </li>
+          <li>
+            <a href="/docs/pro/basics/help/" class="{% if page.id == 'pro-help' %}active{% endif %}">Help and Support</a>
           </li>
         </ul>
       </li>
